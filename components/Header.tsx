@@ -1,5 +1,4 @@
 import { getServerSession } from "next-auth";
-import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { LoginButton } from "./Buttons/LoginButton";
 import { LogoutButton } from "./Buttons/LogoutButton";
@@ -7,8 +6,6 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 
 export default async function Header() {
   const session = await getServerSession(authOptions);
-  console.log(session);
-
   return (
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
