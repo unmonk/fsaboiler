@@ -7,6 +7,8 @@ export default async function ProtectedPage() {
   }
 
   return (
-    <>Signed in as {session.user?.name} on a protected Server Rendered page</>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      Signed in as {session.user?.name} on a protected Server Rendered page
+    </main>
   );
 }
