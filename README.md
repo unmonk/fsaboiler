@@ -2,6 +2,9 @@
 
 This is a boilerplate for a fullstack application using Next.js, TailwindCSS, NextAuth, Prisma, and PostgreSQL.
 
+Uses modern React features like Server Components
+Some of these features are experimental.
+
 ## Features
 
 - Protected Client Rendered Components with NextAuth `useSession` hook
