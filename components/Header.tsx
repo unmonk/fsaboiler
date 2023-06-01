@@ -1,11 +1,12 @@
-import { getServerSession } from "next-auth";
+"use client";
+import { useSession } from "next-auth/react";
 import Link from "next/link";
+import Image from "next/image";
 import { LoginButton } from "./Buttons/LoginButton";
 import { LogoutButton } from "./Buttons/LogoutButton";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 
-export default async function Header() {
-  const session = await getServerSession(authOptions);
+export default function Header() {
+  const { data: session } = useSession();
   return (
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -13,6 +14,12 @@ export default async function Header() {
           href="/"
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
+          <Image
+            alt="FullStack Academy"
+            src="/fsa.png"
+            height={25}
+            width={25}
+          />
           <span className="ml-3 text-xl">FSA Boiler</span>
         </Link>
 
