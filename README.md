@@ -17,5 +17,15 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Hosted at: Vercel : https://fsaboiler.vercel.app
+## Deploy your own
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Funmonk%2Ffsaboiler&env=DATABASE_URL,GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET,GITHUB_CLIENT_ID,GITHUB_CLIENT_SECRET,NEXTAUTH_SECRET)
+
+### TODO
+
+- One click deploy with DB included
+
+#### notes
+
+- Demo at : https://fsaboiler.vercel.app
 - Database at: Railway
