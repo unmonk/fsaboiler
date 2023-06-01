@@ -1,5 +1,6 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+
 export default async function ProtectedPage() {
   const session = await getServerSession(authOptions);
   if (!session) {
@@ -7,8 +8,8 @@ export default async function ProtectedPage() {
   }
 
   return (
-    <main className="flex flex-col items-center justify-between p-24">
+    <div className="flex flex-col items-center justify-between p-24">
       Signed in as {session.user?.name} on a protected Server Rendered page
-    </main>
+    </div>
   );
 }

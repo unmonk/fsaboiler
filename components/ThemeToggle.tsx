@@ -8,12 +8,18 @@ function ThemeToggle() {
   return (
     <>
       {theme === "light" ? (
-        <button className="btn mx-4" onClick={() => setTheme("dark")}>
-          <MoonIcon className="text-black hover:text-red-800" />
+        <button
+          className="btn mx-4 text-black hover:text-red-800"
+          onClick={() => setTheme("dark")}
+        >
+          <MoonIcon size={24} />
         </button>
       ) : (
-        <button className="btn mx-4" onClick={() => setTheme("light")}>
-          <SunIcon className="text-white hover:text-red-800" />
+        <button
+          className="btn mx-4 text-white hover:text-red-800"
+          onClick={() => setTheme("light")}
+        >
+          <SunIcon size={24} />
         </button>
       )}
     </>
