@@ -45,8 +45,8 @@ export default function Header() {
           >
             Public Page
           </Link>
-          <ThemeToggle />
         </nav>
+        <ThemeToggle />
         {session?.user ? <LogoutButton /> : <LoginButton />}
       </div>
     </header>
