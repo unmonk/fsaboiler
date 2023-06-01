@@ -8,6 +8,8 @@ This is a boilerplate for a fullstack application using Next.js, TailwindCSS, Ne
 - Protected Server Rendered Pages with NextAuth `getSession`
 - Public Server Rendered Pages
 - API Routes
+- Google, Github authentication
+- Dark Mode Toggle
 
 ## Getting Started
 
@@ -24,6 +26,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### TODO
 
 - One click deploy with DB included
+- More API Route examples
+- Dynamic Routing example
 
 #### notes
 
